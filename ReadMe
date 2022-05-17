@@ -1,0 +1,7 @@
+Nginx
+
+find /etc/nginx/ -type f -print0 | xargs -0 egrep '^(\s|\t)*server_name'
+
+Apache
+
+find /etc/apache2/ -type f -print0 | xargs -0 egrep '^(\s|\t)*ServerName'
